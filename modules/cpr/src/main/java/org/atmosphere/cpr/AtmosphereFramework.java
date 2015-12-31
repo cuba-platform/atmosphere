@@ -1095,9 +1095,6 @@ public class AtmosphereFramework {
                 getAsyncSupport().getClass().getName(), asyncSupport.getContainerName());
         logger.info("Atmosphere Framework {} started.", Version.getRawVersion());
 
-        logger.info("\n\n\tFor Atmosphere Framework Commercial Support, visit \n\t{} " +
-                "or send an email to {}\n", "http://www.async-io.org/", "support@async-io.org");
-
         if (logger.isTraceEnabled()) {
             for (Entry<String, AtmosphereHandlerWrapper> e : atmosphereHandlers.entrySet()) {
                 logger.trace("\nConfigured AtmosphereHandler {}\n", e.getKey());
@@ -1479,7 +1476,7 @@ public class AtmosphereFramework {
             boolean sessionSupport = Boolean.valueOf(s) || SessionSupport.initializationHint;
             config.setSupportSession(sessionSupport);
             if (sessionSupport && (sc.getServletContext().getMajorVersion() < 3 || !SessionSupport.initializationHint)) {
-                logger.warn("SessionSupport error. Make sure you also define {} as a listener in web.xml, see https://github.com/Atmosphere/atmosphere/wiki/Enabling-HttpSession-Support", SessionSupport.class.getName());
+//                logger.warn("SessionSupport error. Make sure you also define {} as a listener in web.xml, see https://github.com/Atmosphere/atmosphere/wiki/Enabling-HttpSession-Support", SessionSupport.class.getName());
             }
             isSessionSupportSpecified = true;
         }
