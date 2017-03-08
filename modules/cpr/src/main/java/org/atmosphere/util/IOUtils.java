@@ -279,10 +279,8 @@ public class IOUtils {
                 if (s.getMappings().size() > 1) {
                     logger.warn("More than one Servlet Mapping defined. WebSocket may not work {}", s);
                 }
-
-                for (String m : s.getMappings()) {
-                    servletPath = m;
-                }
+                // Use the first mapping if there are multiple available
+                servletPath = s.getMappings().iterator().next();
             } else {
                 throw new IllegalStateException("Unable to configure jsr356 at that stage");
             }
