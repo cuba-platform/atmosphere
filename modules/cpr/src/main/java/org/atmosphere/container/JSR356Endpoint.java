@@ -255,7 +255,8 @@ public class JSR356Endpoint extends Endpoint {
 
     @Override
     public void onError(javax.websocket.Session session, java.lang.Throwable t) {
-        logger.error("", t);
+        // Haulmont API changes logging level to debug
+        logger.debug("Error in websocket endpoint", t);
         webSocketProcessor.notifyListener(webSocket,
                 new WebSocketEventListener.WebSocketEvent<Throwable>(t, WebSocketEventListener.WebSocketEvent.TYPE.EXCEPTION, webSocket));
     }
