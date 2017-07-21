@@ -115,7 +115,8 @@ public class Jetty9WebSocketHandler implements WebSocketListener {
 
     @Override
     public void onWebSocketError(Throwable e) {
-        logger.error("{}", e);
+        //Haulmont API changes logging level to debug
+        logger.debug("{}", e);
         onWebSocketClose(1006, "Unexpected error");
     }
 
