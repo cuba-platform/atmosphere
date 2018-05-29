@@ -1846,6 +1846,7 @@ public class AtmosphereFramework {
             logger.trace("", ex);
         }
 
+        config.properties().clear();
         return this;
     }
 
@@ -2250,6 +2251,7 @@ public class AtmosphereFramework {
             s = config.uuidProvider().generateUuid();
             res.setHeader(HeaderConfig.X_FIRST_REQUEST, "true");
             res.setHeader(X_ATMOSPHERE_TRACKING_ID, s);
+            res.setHeader("Content-Type", "text/plain; charset=utf-8");
         } else {
             // This may breaks 1.0.0 application because the WebSocket's associated AtmosphereResource will
             // all have the same UUID, and retrieving the original one for WebSocket, so we don't set it at all.

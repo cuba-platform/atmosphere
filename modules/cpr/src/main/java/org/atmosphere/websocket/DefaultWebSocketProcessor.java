@@ -404,13 +404,14 @@ public class DefaultWebSocketProcessor implements WebSocketProcessor, Serializab
             l = w.interceptors;
         }
 
+        // Globally defined
+        int tracing = 0;
+        Action a = asynchronousProcessor.invokeInterceptors(l, resource, tracing);
+        if (a.type() != Action.TYPE.CONTINUE && a.type() != Action.TYPE.SKIP_ATMOSPHEREHANDLER) {
+            return;
+        }
+
         try {
-            // Globally defined
-            int tracing = 0;
-            Action a = asynchronousProcessor.invokeInterceptors(l, resource, tracing);
-            if (a.type() != Action.TYPE.CONTINUE && a.type() != Action.TYPE.SKIP_ATMOSPHEREHANDLER) {
-                return;
-            }
 
             //Unit test mock the request and will throw NPE.
             boolean skipAtmosphereHandler = request.getAttribute(SKIP_ATMOSPHEREHANDLER.name()) != null
@@ -643,8 +644,12 @@ public class DefaultWebSocketProcessor implements WebSocketProcessor, Serializab
                             ExecutorsFactory.getScheduler(framework.getAtmosphereConfig()).schedule(new Callable<Object>() {
                                 @Override
                                 public Object call() throws Exception {
-                                    executeClose(webSocket, 1005);
-                                    finish(webSocket, resource, r, s, !allowedToClose);
+                                    AtmosphereResource currentResource = framework.atmosphereFactory().find(resource.uuid());
+                                    if (currentResource != null && currentResource.isSuspended()) {
+                                        // Do not close if the resource has reconnected already
+                                        executeClose(webSocket, 1005);
+                                        finish(webSocket, currentResource, r, s, !allowedToClose);
+                                    }
                                     return null;
                                 }
                             }, ff ? (closingTime == 0 ? 1000 : closingTime) : closingTime, TimeUnit.MILLISECONDS);

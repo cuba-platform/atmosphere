@@ -55,7 +55,7 @@ public class Universe {
     /**
      * Set the must be unique {@link org.atmosphere.cpr.BroadcasterFactory}
      *
-     * @param a {@link org.atmosphere.cpr.BroadcasterFactory}
+     * @param a {@link org.atmosphere.cpr.BroadcasterFactory} Throw exception if Universe methods are used when they are not reliable:modules/runtime/src/main/java/org/atmosphere/runtime/Universe.java
      */
     public static void broadcasterFactory(BroadcasterFactory a) {
         if (factory != null) {
@@ -67,7 +67,7 @@ public class Universe {
     /**
      * Set the must be unique {@link org.atmosphere.cpr.AtmosphereFramework}
      *
-     * @param a {@link org.atmosphere.cpr.AtmosphereFramework}
+     * @param a {@link org.atmosphere.cpr.AtmosphereFramework}hrow exception if Universe methods are used when they are not reliable:modules/runtime/src/main/java/org/atmosphere/runtime/Universe.java
      */
     public static void framework(AtmosphereFramework a) {
         if (framework != null) {
@@ -89,11 +89,13 @@ public class Universe {
     }
 
     /**
+     * <<<<<<< HEAD:modules/cpr/src/main/java/org/atmosphere/cpr/Universe.java
      * Set the must be unique {@link org.atmosphere.cpr.AtmosphereResourceSessionFactory}
      *
-     * @param a {@link org.atmosphere.cpr.AtmosphereResourceSessionFactory}
+     * @param a {@link org.atmosphere.cpr.AtmosphereResourceSessionFactory} Throw exception if Universe methods are used when they are not reliable:modules/runtime/src/main/java/org/atmosphere/runtime/Universe.java
      */
-    public static void sessionResourceFactory(AtmosphereResourceSessionFactory a) {
+    public static void sessionResourceFactory(
+            AtmosphereResourceSessionFactory a) {
         if (sessionFactory != null) {
             sessionFactoryDuplicate = true;
         }
@@ -140,9 +142,9 @@ public class Universe {
     }
 
     /**
+     * <<<<<<< HEAD:modules/cpr/src/main/java/org/atmosphere/cpr/Universe.java
      * Return the {@link org.atmosphere.cpr.AtmosphereResourceSessionFactory}
-     *
-     * @return the {@link org.atmosphere.cpr.AtmosphereResourceSessionFactory}
+     * Throw exception if Universe methods are used when they are not reliable:modules/runtime/src/main/java/org/atmosphere/runtime/Universe.java
      */
     public static AtmosphereResourceSessionFactory sessionFactory() {
         if (sessionFactoryDuplicate) {

@@ -35,7 +35,7 @@ public class JSR356AsyncSupport extends Servlet30CometSupport {
     private static final Logger logger = LoggerFactory.getLogger(JSR356AsyncSupport.class);
     private static final String PATH = "/{path";
     private final AtmosphereConfigurator configurator;
-    
+
     public JSR356AsyncSupport(AtmosphereConfig config) {
         this(config, config.getServletContext());
     }
