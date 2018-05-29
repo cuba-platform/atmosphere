@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <parent>
         <groupId>org.atmosphere</groupId>
         <artifactId>atmosphere-project</artifactId>
@@ -10,7 +9,7 @@
     <groupId>org.atmosphere</groupId>
     <artifactId>atmosphere-annotations</artifactId>
     <packaging>bundle</packaging>
-    <version>2.4.24</version>
+    <version>2.4.24-1-cuba</version>
     <name>atmosphere-annotations</name>
     <url>https://github.com/Atmosphere/atmosphere</url>
     <build>
