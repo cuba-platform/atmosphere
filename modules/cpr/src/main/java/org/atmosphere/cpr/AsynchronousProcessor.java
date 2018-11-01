@@ -158,7 +158,8 @@ public abstract class AsynchronousProcessor implements AsyncSupport<AtmosphereRe
             // https://github.com/Atmosphere/atmosphere/issues/2034
             try {
                 if (s != null && s.isNew()) {
-                    s.setAttribute(FrameworkConfig.BROADCASTER_FACTORY, config.getBroadcasterFactory());
+                    s.setAttribute(getClass().getName(), "");
+                    s.removeAttribute(getClass().getName());
                 }
             } catch (IllegalStateException ex) {
                 AtmosphereResourceImpl r = AtmosphereResourceImpl.class.cast(req.resource());
@@ -174,7 +175,7 @@ public abstract class AsynchronousProcessor implements AsyncSupport<AtmosphereRe
                     res.flushBuffer();
                     return new Action();
                 }
-            }
+            } 
         }
 
         req.setAttribute(FrameworkConfig.SUPPORT_SESSION, supportSession());

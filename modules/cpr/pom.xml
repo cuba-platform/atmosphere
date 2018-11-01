@@ -3,14 +3,14 @@
     <parent>
         <groupId>org.atmosphere</groupId>
         <artifactId>atmosphere-project</artifactId>
-        <version>2.4.24</version>
+        <version>2.4.30</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.atmosphere</groupId>
     <artifactId>atmosphere-runtime</artifactId>
     <packaging>bundle</packaging>
-    <version>2.4.24</version>
+    <version>2.4.30</version>
     <name>atmosphere-runtime</name>
     <url>https://github.com/Atmosphere/atmosphere</url>
     <build>
@@ -47,6 +47,7 @@
                             org.jboss.servlet*;resolution:=optional,
                             org.apache.coyote*;resolution:=optional,
                             org.mortbay.util.ajax*;resolution:=optional,
+                            org.atmosphere.inject*;resolution:=optional,
                             org.atmosphere.jboss*;resolution:=optional,
                             org.apache.shiro*;resolution:=optional,
                             org.jboss.vfs*;resolution:=optional,
@@ -75,6 +76,16 @@
                             org.atmosphere.lifecycle*,
                             org.atmosphere.websocket.protocol*,
                         </Export-Package>
+                        <Require-Capability>
+                            osgi.extender;filter:="(osgi.extender=osgi.serviceloader.processor)",
+                            osgi.extender;filter:="(osgi.extender=osgi.serviceloader.registrar)",
+                            osgi.serviceloader;filter:="(osgi.serviceloader=org.atmosphere.inject.Injectable)";cardinality:=multiple
+                        </Require-Capability>
+                        <Provide-Capability>
+                            osgi.serviceloader;osgi.serviceloader=javax.servlet.ServletContainerInitializer,
+                            osgi.serviceloader;osgi.serviceloader=org.atmosphere.inject.CDIProducer,
+                            osgi.serviceloader;osgi.serviceloader=org.atmosphere.inject.Injectable
+                        </Provide-Capability>
                     </instructions>
                 </configuration>
             </plugin>
@@ -293,6 +304,12 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-pool2</artifactId>
             <version>${commons-pool2}</version>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20180130</version>
             <optional>true</optional>
         </dependency>
     </dependencies>
