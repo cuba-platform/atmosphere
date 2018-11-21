@@ -38,8 +38,8 @@ import org.atmosphere.util.ExecutorsFactory;
 import org.atmosphere.util.Utils;
 import org.atmosphere.util.VoidExecutorService;
 import org.atmosphere.websocket.protocol.StreamingHttpProtocol;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.vaadin.external.org.slf4j.Logger;
+import com.vaadin.external.org.slf4j.LoggerFactory;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;

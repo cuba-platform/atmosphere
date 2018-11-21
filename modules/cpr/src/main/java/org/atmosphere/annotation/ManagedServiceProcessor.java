@@ -24,8 +24,8 @@ import org.atmosphere.cpr.AtmosphereHandler;
 import org.atmosphere.cpr.AtmosphereInterceptor;
 import org.atmosphere.cpr.BroadcastFilter;
 import org.atmosphere.cpr.BroadcasterConfig;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.vaadin.external.org.slf4j.Logger;
+import com.vaadin.external.org.slf4j.LoggerFactory;
 
 import java.util.LinkedList;
 import java.util.List;

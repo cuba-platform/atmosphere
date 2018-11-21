@@ -20,8 +20,8 @@ import org.atmosphere.interceptor.AllowInterceptor;
 import org.atmosphere.util.Utils;
 import org.atmosphere.websocket.WebSocket;
 import org.atmosphere.websocket.WebSocketEventListener;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.vaadin.external.org.slf4j.Logger;
+import com.vaadin.external.org.slf4j.LoggerFactory;
 
 import javax.servlet.http.HttpSession;
 import java.io.IOException;

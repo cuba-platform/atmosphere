@@ -28,8 +28,8 @@ import org.atmosphere.cpr.BroadcasterFactory;
 import org.atmosphere.cpr.BroadcasterListenerAdapter;
 import org.atmosphere.util.ExecutorsFactory;
 import org.atmosphere.util.Utils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.vaadin.external.org.slf4j.Logger;
+import com.vaadin.external.org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.util.LinkedList;

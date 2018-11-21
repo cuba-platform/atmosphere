@@ -19,8 +19,8 @@ import org.atmosphere.config.AtmosphereAnnotation;
 import org.atmosphere.config.service.BroadcasterFilterService;
 import org.atmosphere.cpr.AtmosphereFramework;
 import org.atmosphere.cpr.BroadcastFilter;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.vaadin.external.org.slf4j.Logger;
+import com.vaadin.external.org.slf4j.LoggerFactory;
 
 @AtmosphereAnnotation(BroadcasterFilterService.class)
 public class BroadcastFilterServiceProcessor implements Processor<BroadcastFilter> {

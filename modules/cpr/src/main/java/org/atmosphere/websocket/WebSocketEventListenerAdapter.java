@@ -16,8 +16,8 @@
 package org.atmosphere.websocket;
 
 import org.atmosphere.cpr.AtmosphereResourceEvent;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.vaadin.external.org.slf4j.Logger;
+import com.vaadin.external.org.slf4j.LoggerFactory;
 
 /**
  * An implementation of {@link WebSocketEventListener} with just log event as trace.

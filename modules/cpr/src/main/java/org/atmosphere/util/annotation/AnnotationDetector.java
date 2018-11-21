@@ -35,8 +35,8 @@
   */
 package org.atmosphere.util.annotation;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.vaadin.external.org.slf4j.Logger;
+import com.vaadin.external.org.slf4j.LoggerFactory;
 
 import java.io.DataInput;
 import java.io.File;

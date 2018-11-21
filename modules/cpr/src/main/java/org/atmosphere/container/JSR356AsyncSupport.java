@@ -20,8 +20,8 @@ import org.atmosphere.cpr.AtmosphereConfig;
 import org.atmosphere.cpr.AtmosphereFramework;
 import org.atmosphere.cpr.WebSocketProcessorFactory;
 import org.atmosphere.util.IOUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.vaadin.external.org.slf4j.Logger;
+import com.vaadin.external.org.slf4j.LoggerFactory;
 
 import javax.websocket.DeploymentException;
 import javax.websocket.HandshakeResponse;

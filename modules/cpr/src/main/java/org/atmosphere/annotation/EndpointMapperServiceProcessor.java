@@ -19,8 +19,8 @@ import org.atmosphere.config.AtmosphereAnnotation;
 import org.atmosphere.config.service.EndpointMapperService;
 import org.atmosphere.cpr.AtmosphereFramework;
 import org.atmosphere.util.EndpointMapper;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.vaadin.external.org.slf4j.Logger;
+import com.vaadin.external.org.slf4j.LoggerFactory;
 
 @AtmosphereAnnotation(EndpointMapperService.class)
 public class EndpointMapperServiceProcessor implements Processor<EndpointMapper> {

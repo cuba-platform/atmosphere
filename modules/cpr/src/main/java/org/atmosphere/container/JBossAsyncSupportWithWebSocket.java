@@ -29,8 +29,8 @@ import org.atmosphere.cpr.HeaderConfig;
 import org.atmosphere.websocket.WebSocket;
 import org.jboss.servlet.http.HttpEvent;
 import org.jboss.servlet.http.HttpEventServlet;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.vaadin.external.org.slf4j.Logger;
+import com.vaadin.external.org.slf4j.LoggerFactory;
 
 /**
  * JBoss's WebSocket support. This code has been adapted from

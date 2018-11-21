@@ -16,8 +16,8 @@
 package org.atmosphere.cpr;
 
 import org.atmosphere.handler.AbstractReflectorAtmosphereHandler;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.vaadin.external.org.slf4j.Logger;
+import com.vaadin.external.org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationHandler;

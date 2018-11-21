@@ -36,8 +36,8 @@ import org.atmosphere.config.service.WebSocketProcessorService;
 import org.atmosphere.config.service.WebSocketProtocolService;
 import org.atmosphere.util.IOUtils;
 import org.atmosphere.util.annotation.AnnotationDetector;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.vaadin.external.org.slf4j.Logger;
+import com.vaadin.external.org.slf4j.LoggerFactory;
 
 import javax.servlet.ServletContext;
 import javax.servlet.annotation.HandlesTypes;

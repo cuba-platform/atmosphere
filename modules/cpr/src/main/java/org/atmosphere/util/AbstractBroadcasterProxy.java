@@ -23,8 +23,8 @@ import org.atmosphere.cpr.BroadcasterFuture;
 import org.atmosphere.cpr.DefaultBroadcaster;
 import org.atmosphere.cpr.Deliver;
 import org.atmosphere.cpr.FrameworkConfig;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.vaadin.external.org.slf4j.Logger;
+import com.vaadin.external.org.slf4j.LoggerFactory;
 
 import java.lang.reflect.Method;
 import java.net.URI;
