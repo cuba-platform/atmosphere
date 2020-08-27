@@ -19,8 +19,8 @@ import org.atmosphere.cpr.Action;
 import org.atmosphere.cpr.AtmosphereInterceptorAdapter;
 import org.atmosphere.cpr.AtmosphereResource;
 import org.atmosphere.util.Utils;
-import com.vaadin.external.org.slf4j.Logger;
-import com.vaadin.external.org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Add proper header for Nginx's buffering http://wiki.nginx.org/HttpProxyModule#proxy_buffering

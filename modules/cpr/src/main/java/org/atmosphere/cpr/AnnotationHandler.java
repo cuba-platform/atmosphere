@@ -17,8 +17,8 @@ package org.atmosphere.cpr;
 
 import org.atmosphere.annotation.Processor;
 import org.atmosphere.config.AtmosphereAnnotation;
-import com.vaadin.external.org.slf4j.Logger;
-import com.vaadin.external.org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.lang.annotation.Annotation;
 import java.util.Collection;

@@ -18,8 +18,8 @@ package org.atmosphere.cpr;
 import org.atmosphere.util.FakeHttpSession;
 import org.atmosphere.util.QueryStringDecoder;
 import org.atmosphere.util.ReaderInputStream;
-import com.vaadin.external.org.slf4j.Logger;
-import com.vaadin.external.org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.servlet.AsyncContext;
 import javax.servlet.DispatcherType;

@@ -15,8 +15,8 @@
  */
 package org.atmosphere.cpr;
 
-import com.vaadin.external.org.slf4j.Logger;
-import com.vaadin.external.org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * An implementation of {@link AtmosphereResourceEventListener} which just log events with log level TRACE.

@@ -41,8 +41,8 @@ import org.atmosphere.container.Tomcat7Servlet30SupportWithWebSocket;
 import org.atmosphere.container.TomcatCometSupport;
 import org.atmosphere.container.WebLogicServlet30WithWebSocket;
 import org.atmosphere.util.IOUtils;
-import com.vaadin.external.org.slf4j.Logger;
-import com.vaadin.external.org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.LinkedList;
 import java.util.List;

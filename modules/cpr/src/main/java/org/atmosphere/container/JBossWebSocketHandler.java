@@ -28,8 +28,8 @@ import org.atmosphere.jboss.websockets.Frame;
 import org.atmosphere.jboss.websockets.frame.BinaryFrame;
 import org.atmosphere.jboss.websockets.frame.CloseFrame;
 import org.atmosphere.jboss.websockets.frame.TextFrame;
-import com.vaadin.external.org.slf4j.Logger;
-import com.vaadin.external.org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

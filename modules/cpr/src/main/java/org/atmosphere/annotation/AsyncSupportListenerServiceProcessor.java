@@ -19,8 +19,8 @@ import org.atmosphere.config.AtmosphereAnnotation;
 import org.atmosphere.config.service.AsyncSupportListenerService;
 import org.atmosphere.cpr.AsyncSupportListener;
 import org.atmosphere.cpr.AtmosphereFramework;
-import com.vaadin.external.org.slf4j.Logger;
-import com.vaadin.external.org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @AtmosphereAnnotation(AsyncSupportListenerService.class)
 public class AsyncSupportListenerServiceProcessor implements Processor<AsyncSupportListener> {

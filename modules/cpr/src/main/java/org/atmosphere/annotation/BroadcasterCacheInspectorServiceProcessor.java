@@ -20,8 +20,8 @@ import org.atmosphere.config.AtmosphereAnnotation;
 import org.atmosphere.config.service.BroadcasterCacheInspectorService;
 import org.atmosphere.cpr.AtmosphereFramework;
 import org.atmosphere.cpr.BroadcasterCache;
-import com.vaadin.external.org.slf4j.Logger;
-import com.vaadin.external.org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @AtmosphereAnnotation(BroadcasterCacheInspectorService.class)
 public class BroadcasterCacheInspectorServiceProcessor implements Processor<BroadcasterCache> {

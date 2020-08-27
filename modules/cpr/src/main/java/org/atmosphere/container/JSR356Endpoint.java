@@ -24,8 +24,8 @@ import org.atmosphere.util.IOUtils;
 import org.atmosphere.websocket.WebSocket;
 import org.atmosphere.websocket.WebSocketEventListener;
 import org.atmosphere.websocket.WebSocketProcessor;
-import com.vaadin.external.org.slf4j.Logger;
-import com.vaadin.external.org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.servlet.http.HttpSession;
 import javax.websocket.CloseReason;

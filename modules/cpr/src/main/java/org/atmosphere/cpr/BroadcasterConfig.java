@@ -21,8 +21,8 @@ import org.atmosphere.cache.BroadcasterCacheInspector;
 import org.atmosphere.cpr.BroadcastFilter.BroadcastAction;
 import org.atmosphere.util.ExecutorsFactory;
 import org.atmosphere.util.IOUtils;
-import com.vaadin.external.org.slf4j.Logger;
-import com.vaadin.external.org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.Collection;
 import java.util.Collections;

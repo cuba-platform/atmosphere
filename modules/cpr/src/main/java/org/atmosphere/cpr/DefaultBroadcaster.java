@@ -20,8 +20,8 @@ import org.atmosphere.cache.BroadcastMessage;
 import org.atmosphere.cache.CacheMessage;
 import org.atmosphere.cpr.BroadcastFilter.BroadcastAction;
 import org.atmosphere.util.Utils;
-import com.vaadin.external.org.slf4j.Logger;
-import com.vaadin.external.org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.net.URI;

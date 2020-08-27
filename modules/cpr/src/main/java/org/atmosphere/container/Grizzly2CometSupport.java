@@ -28,8 +28,8 @@ import org.glassfish.grizzly.comet.CometEngine;
 import org.glassfish.grizzly.comet.CometEvent;
 import org.glassfish.grizzly.comet.CometHandler;
 import org.glassfish.grizzly.http.server.Response;
-import com.vaadin.external.org.slf4j.Logger;
-import com.vaadin.external.org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
