@@ -30,6 +30,7 @@ import org.atmosphere.container.JBossWebCometSupport;
 import org.atmosphere.container.JSR356AsyncSupport;
 import org.atmosphere.container.Jetty7CometSupport;
 import org.atmosphere.container.Jetty9AsyncSupportWithWebSocket;
+import org.atmosphere.container.Jetty93AsyncSupportWithWebSocket;
 import org.atmosphere.container.JettyAsyncSupportWithWebSocket;
 import org.atmosphere.container.JettyCometSupport;
 import org.atmosphere.container.JettyServlet30AsyncSupportWithWebSocket;
@@ -152,6 +153,7 @@ public class DefaultAsyncSupportResolver implements AsyncSupportResolver {
 
                     if (testClassExists(JETTY_9))
                         add(Jetty9AsyncSupportWithWebSocket.class);
+                        add(Jetty93AsyncSupportWithWebSocket.class);
 
                     if (testClassExists(JETTY_8))
                         add(JettyServlet30AsyncSupportWithWebSocket.class);
